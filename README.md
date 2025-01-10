@@ -1,4 +1,21 @@
-# Getting Started with Create React App
+# WOW. CONGRATS ON MAKING IT HERE.
+
+SOLANA CA: 
+
+WOW Terminal: A Dynamic Cyberpunk Command-Line Experience
+Dive into a visually stunning terminal interface that brings the classic command-line experience into the modern era. WOW Terminal combines nostalgic text-based interaction with cutting-edge visual effects across three distinct themes:
+🌟 Key Features:
+
+Matrix Rain: Immerse yourself in cascading digital rain inspired by The Matrix
+Cyber Grid: Experience a futuristic cyberpunk landscape with dynamic grid patterns and particle effects
+WOW Theme: Enjoy a custom video backdrop that adds depth to your terminal experience
+
+🎮 Interactive Elements:
+
+Level up system that rewards exploration and interaction
+Number guessing game with XP rewards
+Achievement system with visual notifications
+Real-time theme switching with smooth transitions
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
