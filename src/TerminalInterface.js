@@ -4,7 +4,7 @@ import MatrixRain from './MatrixRain';
 import CyberBackground from './CyberBackground';
 
 const TerminalInterface = () => {
-  const [commands, setCommands] = useState(['Welcome to WOW Terminal! Type "help" to begin. Type "theme" to change theme. X: @wowterminal. CA: ']);
+  const [commands, setCommands] = useState(['Welcome to WOW Terminal! Type "help" to begin. Type "theme" to change theme. X: @wowterminal. TG: t.me/wowterminal. CA: ']);
   const [currentCommand, setCurrentCommand] = useState('');
   const [theme, setTheme] = useState('matrix');
   const [gameActive, setGameActive] = useState(false);
