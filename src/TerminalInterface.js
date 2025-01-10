@@ -155,6 +155,7 @@ Progress: [${'='.repeat(Math.floor((xp % (level * 100)) / (level * 10)))}${'.'.r
       )}
 
       <div className="relative z-10 space-y-4">
+        {/* Header */}
         <div className="flex justify-between items-center bg-black/30 p-3 rounded-lg">
           <div className="flex items-center gap-2">
             <Terminal className={themes[theme].text} />
@@ -170,6 +171,21 @@ Progress: [${'='.repeat(Math.floor((xp % (level * 100)) / (level * 10)))}${'.'.r
           </div>
         </div>
 
+        {/* ASCII Art */}
+        <div className={`my-4 ${themes[theme].accent}`}>
+          <pre className="text-xs leading-none">
+{` __      __  _____   __      __                                                                     ___                    
+/\\ \\  __/\\ \\/\\  __\`\\/\\ \\  __/\\ \\                                                                  /'___\\                   
+\\ \\ \\/\\ \\ \\ \\ \\ \\/\\ \\ \\ \\/\\ \\ \\ \\                           _____   __  __    ___ ___   _____    /\\ \\__/  __  __    ___    
+ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\                         /\\ '__\`\\/\\ \\/\\ \\ /' __\` __\`\\/\\ '__\`\\  \\ \\ ,__\\/\\ \\/\\ \\ /' _ \`\\  
+  \\ \\ \\_/ \\_\\ \\ \\ \\_\\ \\ \\ \\_/ \\_\\ \\                        \\ \\ \\L\\ \\ \\ \\_\\ \\/\\ \\/\\ \\/\\ \\ \\ \\L\\ \\__\\ \\ \\_/\\ \\ \\_\\ \\/\\ \\/\\ \\ 
+   \\ \`\\___x___/\\ \\_____\\ \`\\___x___/                         \\ \\ ,__/\\ \\____/\\ \\_\\ \\_\\ \\_\\ \\ ,__/\\_\\\\ \\_\\  \\ \\____/\\ \\_\\ \\_\\
+    '\\/__//__/  \\/_____/'\\/__//__/                           \\ \\ \\/  \\/___/  \\/_/\\/_/\\/_/\\ \\ \\/\\/_/ \\/_/   \\/___/  \\/_/\\/_/
+                                                              \\ \\_\\                       \\ \\_\\                            
+                                                               \\/_/                        \\/_/                            `}</pre>
+        </div>
+
+        {/* Terminal Window */}
         <div 
           ref={terminalRef}
           className={`${themes[theme].terminal} rounded-lg p-4 h-[60vh] overflow-y-auto`}
@@ -184,6 +200,7 @@ Progress: [${'='.repeat(Math.floor((xp % (level * 100)) / (level * 10)))}${'.'.r
           ))}
         </div>
 
+        {/* Input */}
         <div className={`flex items-center ${themes[theme].terminal} rounded-lg p-2`}>
           <span className={themes[theme].text}>{'>'}</span>
           <input
@@ -198,6 +215,7 @@ Progress: [${'='.repeat(Math.floor((xp % (level * 100)) / (level * 10)))}${'.'.r
         </div>
       </div>
 
+      {/* Theme Toggle Button */}
       <button
         onClick={() => handleCommand('theme')}
         className={`fixed bottom-4 right-4 ${themes[theme].terminal} p-2 rounded-full`}
@@ -205,6 +223,7 @@ Progress: [${'='.repeat(Math.floor((xp % (level * 100)) / (level * 10)))}${'.'.r
         <Coffee className={themes[theme].text} />
       </button>
 
+      {/* Achievement Popup */}
       {showAchievement && (
         <div className="fixed top-4 right-4 bg-yellow-500 text-black px-4 py-2 rounded-lg flex items-center gap-2">
           <Star />
